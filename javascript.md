@@ -16,3 +16,13 @@ var squaredArray = inputArray.map(x => x \_ x);
 Another typical example would be an anonymous function used by popular frameworks used as IIFE (Immediate Invoked Function Expression).
 
 (function() { })();
+
+# What’s the difference between a variable that is: null, undefined or undeclared? How would you go about checking for any of these states?
+
+Undefined is a variable that has been declared but no value exists and is a type of itself ‘undefined’.
+
+Null variables exist and have the value of null assigned to them.
+
+We use ‘console.log();’ and ‘type of’ to check if a variable is undefined or null.
+
+Undeclared variables don’t even exist. A variable is undeclared when it does not use the var keyword. It gets created on the global object (that is, the window), thus it operates in a different space as the declared variables. This will not work in strict mode,it will throw an error.
